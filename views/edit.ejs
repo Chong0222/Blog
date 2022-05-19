@@ -1,0 +1,37 @@
+<link href= "/public/css/form.css" rel="stylesheet" type="text/css" />
+<%- include('layouts/header'); -%>
+
+    <body>
+        <%- include('layouts/nav'); -%>
+            <h1 class="composeh1">Edit</h1>
+            <h2 id="errors">
+                <% if (typeof(errors) !='undefined' ) { for (let error of errors) { %>
+                    <p class="errors">
+                        <%= error.msg %>
+                    </p>
+                    <% } } %>
+                </h2>
+            <form action="/edit/<%=post._id%>" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <div class="field">
+                        <label class="composeTitle">Title:</label>
+                        <input type="text" name="postTitle" class="composeTitle" value="<%= post.title %>">
+                    </div>
+                    
+                    <textarea class="textarea" id="postBody" name="postBody"  rows="5"
+                        cols="30"><%= post.content %></textarea>
+                    
+                        <div class="field">
+                            <label for="img">Select image:</label>
+                            <input type="file" id="img" name="myImage" accept="image/*"> 
+                        </div>
+                    <button class="btn" type="submit" name="button">Publish</button>
+                </div>
+            </form>
+            <script type="text/javascript" src="/ckeditor/ckeditor.js"> </script>
+            <script type="text/javascript">
+                CKEDITOR.replace('postBody');
+            </script>
+    </body>
+
+    <%- include('layouts/footer'); -%>

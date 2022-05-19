@@ -1,0 +1,23 @@
+<%- include('layouts/header'); -%>
+<body>
+    <%- include('layouts/nav'); -%>
+    <h1>All Posts</h1>
+        <main>
+            <table class="homeTable">
+                <thead>
+                  <th>Title</th>
+                  <th>Content</th>
+                </thead>
+                  <tbody>
+                     <% for(var post of posts) {%>
+                      <tr>
+                        <td><%= post.title %></td> 
+                        <td><%- post.content %></td>
+                        <td><img src="<%= post.image %>" ></td>
+                      </tr>
+                    <% }%>
+                  </tbody>
+              </table>
+        </main>    
+</body>
+<%- include('layouts/footer'); -%>

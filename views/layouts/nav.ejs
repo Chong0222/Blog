@@ -1,0 +1,12 @@
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/compose">Compose</a></li>
+        <li><a href="/admin">Admin</a></li>
+        <% if (typeof(posts) !='undefined' ) {for(var post of posts) {%>
+            <li class="addnav">
+                <%= post.title %>
+            </li>
+            <% }}%>
+    </ul>
+</nav>

@@ -1,0 +1,28 @@
+<%- include('layouts/header'); -%>
+<body>
+  <%- include('layouts/nav'); -%>
+   <table>
+      <thead>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Image</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </thead>
+        <tbody>
+          <% for(var post of posts) {%>
+            <tr>
+              <td><%= post.title %></td>
+              <td><%- post.content %></td>
+              <td><img src="<%= post.image %>" ></td>
+
+              <td><a href="/edit/<%=post._id%>">Edit</a></td>
+              <td><a href="/delete/<%=post._id%>">Delete</a></td>
+            </tr>
+          <% }%>
+        </tbody>
+    </table>
+    <h4 class="addPost"><a href="/compose">Add post</a></h4>
+
+</body>
+<%- include('layouts/footer'); -%>

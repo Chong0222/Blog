@@ -1,0 +1,168 @@
+body{
+    width: 1320px; /* increase the width of the body to make space for the sidebar on the right */
+    border: 2px solid black; /* add a 2px border in black around the content */
+    margin: 20px auto; /* 20px margin from top and bottom of the browser body and auto makes the content sit equidistant from the left and right of the browser body */
+    padding: 20px; /* make the content inside the body sit at a 20px gap from all the 4 sides */
+    border-radius: 10px; /* round the edges of the border */
+}
+
+header{
+    text-align: center; /* Center the text in the header*/
+}
+
+.title{
+    display: flex;
+    margin-left: 500px;
+}
+
+.title h1{
+    margin-left: 50px;
+}
+
+
+.titleImg{
+    width: 200px;
+    height: 100px;
+}
+
+.composeh1{
+    margin: 10px 600px;
+    
+}
+
+.composeTitle{
+    margin-bottom: 10px;
+}
+
+.btn{
+    background-color: #F56D91;
+    font-size: 12px;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 24px;
+    margin: 10px auto;
+    border: 2px solid #F56D91;
+}
+
+
+h1,h2{
+    color: #F56D91; /* using a hex code to change the colour */
+    font-family: cursive; /* changes how the text looks to use the cursive font */
+}
+
+nav{
+    background-color: #f7e7d9; /* add colour to the nav background */
+    padding: 20px 0; /* add a 20 px top and bottom padding in the nav tag  */
+    text-align: center; /* make the text in the nav centered */
+}
+
+.addnav,nav a{
+    font-size: 20px; /* make the text bigger than default */
+    font-weight: bold; /* make the text bold */
+    color: #F56D91; /* change the colour of the text links */
+    text-decoration: none; /* remove the underline */
+    padding: 0 30px; /* push the links away from the other links */
+}
+
+
+img{
+    width: 250px; /* make the image go all the way from left to the right */
+    height: 300px;
+    margin: auto;
+}
+footer{
+    clear: both; /* clear the floating elements above */
+    text-align: center; /* Center the text in the footer */
+    font-weight: bold; /* make the text bold */
+    background-color: #f7e7d9; /* add colour to the  background */
+    padding: 20px 0; /* add a 20 px top and bottom padding in the footer tag  */
+    font-size: 20px; /* make the text bigger than default */
+    color: #F56D91; /* change the colour of the text */
+}
+
+main{
+    width: 800px;
+    float: left;
+}
+
+
+
+.field{
+    margin: 10px 5px;
+}
+
+.field label{
+    display: inline-block;
+    width: 105px;
+    vertical-align: top;
+    font-size: 20px;
+    font-family: cursive;
+    color: #F56D91;
+}
+
+.field input{
+    width: 200px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: cursive;
+    font-size: 20px;
+  }
+  
+  td,tr {
+    border: 2px solid #ddd;
+  }
+
+  tr:hover {background-color: #D6EEEE;}
+
+  .addPost a:link{
+      text-decoration: none;
+     
+      font-size: 20px;
+      margin-left: 50px;
+  }
+
+  .addPost a:visited{
+    color: #F56D91;
+  }
+ 
+
+
+.submit{
+    border: 2px solid #F56D91;
+    background-color: #F56D91;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+
+.homeTable{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 120%;
+}
+
+
+nav>ul>li{ /* Only applies these styles to the immediate child <li> in the immediate child <ul> in <nav>. Basically it only affects the <li> in the main menu not the sub menu */
+    display: inline-block; /* to make the links in the main menu site side by side */
+    position: relative; /* to make the parent <li> as the container element of the absolutely positioned <ul> representing the sub menu */
+}
+
+.table{
+    width: 100%;
+}
+/* Footer and sidebar menus */
+footer{
+    padding: 0 0 20px 0;
+    font-family: cursive; 
+}
+
