@@ -13,10 +13,11 @@ header{
 .title{
     display: flex;
     margin-left: 500px;
+    color: #F56D91;
 }
 
 .title h1{
-    margin-left: 50px;
+    margin-left: 80px;
 }
 
 
